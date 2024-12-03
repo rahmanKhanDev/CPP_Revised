@@ -61,5 +61,7 @@ int main()
     for_each(controls.begin(), controls.end(), [](Control control)
              { control.displayControls(); }); // call display on control obj
                                               // find()
-  
+       auto controlById =find(controls.begin(),controls.end(),control2.id==1002);
+
+       
 }
